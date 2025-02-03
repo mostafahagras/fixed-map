@@ -4,9 +4,9 @@ mod boolean;
 pub(crate) use self::boolean::BooleanMapStorage;
 
 #[cfg(feature = "hashbrown")]
-mod hashbrown;
+pub mod hashbrown;
 #[cfg(feature = "hashbrown")]
-pub(crate) use self::hashbrown::HashbrownMapStorage;
+pub use self::hashbrown::HashbrownMapStorage;
 
 mod option;
 pub(crate) use self::option::OptionMapStorage;
