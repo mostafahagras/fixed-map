@@ -295,6 +295,7 @@ pub use self::key::Key;
 pub mod map;
 #[doc(inline)]
 pub use self::map::Map;
+pub use hashbrown::HashbrownMapStorage;
 
 pub mod set;
 #[doc(inline)]
